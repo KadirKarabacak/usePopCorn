@@ -10,6 +10,26 @@
   --color-red-dark: #e03131;
 }
 
+/* 1000px */
+/* @media only screen and (max-width: 62.5em) {
+} */
+
+/* 768px */
+/* @media only screen and (max-width: 48em) {
+} */
+
+/* 600px */
+/* @media only screen and (max-width: 37.5em) {
+} */
+
+/* 500px */
+/* @media only screen and (max-width: 31.25em) {
+} */
+
+/* 400px */
+/* @media only screen and (max-width: 25em) {
+} */
+
 * {
   margin: 0;
   padding: 0;
@@ -20,6 +40,17 @@ html {
   font-size: 62.5%;
 }
 
+@media only screen and (max-width: 48em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 40%;
+  }
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -27,6 +58,12 @@ body {
   color: var(--color-text);
   background-color: var(--color-background-900);
   padding: 2.4rem;
+}
+
+@media only screen and (max-width: 31.25em) {
+  body {
+    padding: 0;
+  }
 }
 
 /* ******* */
@@ -41,6 +78,18 @@ body {
   border-radius: 0.9rem;
 }
 
+@media only screen and (max-width: 62.5em) {
+  .nav-bar {
+    padding: 0 2rem;
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  .nav-bar {
+    padding: 0 1rem;
+  }
+}
+
 .main {
   margin-top: 2.4rem;
   height: calc(100vh - 7.2rem - 3 * 2.4rem);
@@ -48,6 +97,21 @@ body {
   gap: 2.4rem;
   justify-content: center;
 }
+@media only screen and (max-width: 31.25em) {
+  .main {
+    gap: 0;
+    column-gap: 1rem;
+
+    flex-direction: column;
+    margin-top: 5rem;
+    align-items: center;
+  }
+}
+
+/* @media only screen and (max-width: 25em) {
+  .main {
+  }
+} */
 
 .box {
   width: 42rem;
@@ -58,6 +122,21 @@ body {
   border-radius: 0.9rem;
   position: relative;
 }
+
+@media only screen and (max-width: 62.5em) {
+  .box {
+    width: 35rem;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .box {
+    margin-bottom: 2rem;
+    overflow: scroll;
+    width: 90%;
+  }
+}
+
 .box::-webkit-scrollbar,
 .list::-webkit-scrollbar {
   display: none;
@@ -95,6 +174,11 @@ body {
   font-weight: 600;
   color: #fff;
 }
+@media only screen and (max-width: 62.5em) {
+  .logo h1 {
+    font-size: 2rem;
+  }
+}
 
 .search {
   justify-self: center;
@@ -108,6 +192,17 @@ body {
 
   /* background-color: var(--color-background-900); */
   background-color: var(--color-primary-light);
+}
+@media only screen and (max-width: 31.25em) {
+  .search {
+    margin-left: 4px;
+    width: auto;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .search {
+    width: 20rem;
+  }
 }
 
 .search::placeholder {
@@ -123,6 +218,11 @@ body {
 .num-results {
   justify-self: end;
   font-size: 1.8rem;
+}
+@media only screen and (max-width: 62.5em) {
+  .num-results {
+    font-size: 1.5rem;
+  }
 }
 
 .btn-toggle {
@@ -161,6 +261,12 @@ body {
 
   padding: 1.6rem 3.2rem;
   border-bottom: 1px solid var(--color-background-100);
+}
+
+@media only screen and (max-width: 31.25em) {
+  .list li {
+    padding: 1rem 1.5rem;
+  }
 }
 
 .list.list-movies li {
@@ -208,6 +314,11 @@ body {
   cursor: pointer;
   transition: all 0.3s;
 }
+@media only screen and (max-width: 62.5em) {
+  .btn-delete {
+    right: 1.5rem;
+  }
+}
 
 .btn-delete:hover {
   background-color: var(--color-red-dark);
@@ -220,6 +331,12 @@ body {
   border-radius: 0.9rem;
   background-color: var(--color-background-100);
   box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 62.5em) {
+  .summary {
+    padding: 1.2rem 2.2rem 0.8rem 2.2rem;
+  }
 }
 
 .summary h2 {
@@ -264,6 +381,14 @@ body {
   width: 33%;
 }
 
+@media only screen and (max-width: 31.25em) {
+  .details section {
+    padding: 1.5rem;
+  }
+  .details img {
+    width: 40%;
+  }
+}
 .details-overview {
   width: 100%;
   padding: 2.4rem 3rem;
@@ -271,6 +396,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.4rem;
+}
+@media only screen and (max-width: 31.25em) {
+  .details-overview {
+    padding: 1rem 2rem;
+  }
 }
 
 .details-overview h2 {
@@ -294,6 +424,34 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .rating span {
+    width: 16px !important;
+    height: 16px !important;
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  .rating div {
+    gap: 0 !important;
+  }
+
+  .rating p {
+    margin-left: 1rem !important;
+  }
+
+  .rating span {
+    width: 14px !important;
+    height: 14px !important;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .rating div {
+    justify-content: center;
+  }
 }
 
 .btn-add {
