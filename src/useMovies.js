@@ -26,7 +26,7 @@ export function useMovies(query, callback) {
 
           // pass a second argument { signal: controller.signal }
           const res = await fetch(
-            `http://www.omdbapi.com/?apikey=${KEY}&s=${query}`,
+            `https://www.omdbapi.com/?apikey=${KEY}&s=${query}`,
             { signal: controller.signal }
           );
           const data = await res.json();

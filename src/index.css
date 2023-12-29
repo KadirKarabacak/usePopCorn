@@ -134,6 +134,7 @@ body {
     margin-bottom: 2rem;
     overflow: scroll;
     width: 90%;
+    min-height: 46rem;
   }
 }
 
