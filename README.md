@@ -18,4 +18,4 @@
 - Clearing previous API calls after each data entered in the input field to improve performance.
 - UseRef to select an element in the component in order not to break the declarative structure of React.
 
-![React-use-Pop-Corn](src/usePopCorn-img.png)
+![React-use-Pop-Corn](public/usePopCorn.gif)
