@@ -2,6 +2,8 @@
 
 **This project is a movie site which using React features.**
 
+Live Version 🟢 <a href="https://usemypopcorn.netlify.app/">usePopCorn</a>
+
 ## What you can do with this project?
 - You can **search** for a movie with a specific name.
 - You can get more information about the movie by clicking on the movie you are looking for. Film length, production date, film genre, film content, producer name, actors and imdb rating.
